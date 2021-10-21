@@ -1,0 +1,140 @@
+@charset "utf-8";
+*{
+			margin: 0px;
+			padding: 0px;
+			font-size: 14px;
+			font-family: 
+		}
+
+		body{
+			background-color: #d3d3d3;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#wrapper{
+			width: 950px;
+			min-height: 780px;
+			margin:auto;
+		}
+
+		#wrapper #header{
+			height: 100px;
+			background-image: url(../preview.jpg);
+			width: auto;
+		}
+
+		#wrapper #menu{
+			height: 50px;
+			background-color: rgba(0,0,0,1);
+		}
+
+		#wrapper #menu ul{
+			list-style-type: none;
+		}
+
+		#wrapper #menu ul li{
+			float:left;
+			width: 237px;
+			text-align: center;
+		}
+
+		#wrapper #menu ul li a{
+			font-size: 24px;
+			text-decoration: none;
+			color: #ffffff;
+			line-height: 50px;
+			margin-top: 150px;
+		}
+
+		#wrapper #menu ul li a:hover{
+			color: #ffff99;
+			background-color: rgba(255,255,255,0.7);
+		}
+
+		#wrapper #content{
+			min-height: 600px;
+			overflow: hidden;
+			background-color: rgba(255,255,255,0.7);
+		}
+
+		#wrapper #content #content_left{
+			width: 420px;
+			height: 302px;
+			float: left;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			background-color: rgba(255,255,255,1);
+		}
+
+		#wrapper #content #content_left p{
+			text-align: justify;
+			margin-bottom: 20px;
+		}
+
+		#wrapper #content #content_left h2{
+			color:#ffffff;
+			font-size: 36px;
+			margin-bottom: 25px;
+			background-color: rgba(0,0,0,0.9);
+		}
+
+		#wrapper #content #content_left p img{
+			width: 170px;
+			height: 210px;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+
+		#wrapper #content #content_right{
+			width: 460px;
+			min-height: 560px;
+			float: right;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 10px;
+			padding-right: 20px;
+		}
+
+		#wrapper #content #content_right h2{
+			font-size: 36px;
+			text-align: left;
+			margin-bottom: 25px;
+			margin-left: 10px;
+		}
+
+		#wrapper #content #content_right p{
+			text-align: left;
+			margin-bottom: 20px;
+			margin-left: 10px;
+		}
+
+		#wrapper #content #content_right p img{
+			width: 100px;
+			height: auto;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+
+		#wrapper #content #content_left #socialmedia {
+			text-align: left;
+		}
+
+		#wrapper #content #content_left #socialmedia img{
+			width: 350px;
+			height: auto;
+			border: none;
+		}
+		
+		#wrapper #footer{
+			height: 50px;
+			font-size: 18px;
+			color: #000000;
+			padding-left: 20px;
+			line-height: 50px;
+		}
