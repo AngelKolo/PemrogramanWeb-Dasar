@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamabahan Catatan JS</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// CARA MENGISI ULANG NILAI VARIABLE
+
+		// mula-mula kita buat variabel dengan isi seperti ini
+		var age = 18;
+		// lalu kita isi ulang
+		age = 21; // pada saat di isi ulang tidak perlu menggunakan kunci var tinggal paki nama variabel saja.
+
+		// CARA MENGHAPUS VARIABLE
+		bookTitle = "Belajar Pemrograman Javascript";
+		delete bookTitle;
+
+		// BERSIFAT STATIC TYPING
+		// contoh
+		var name = "Dian";
+		var age = 22;
+		var single = true;
+		// pada contoh diatas variabel :
+		// name bertipe data string
+		// age ------------- integer
+		// single ---------- boolean
+
+		// bisa dicek dengan kata kunci typeof
+		// contoh
+		typeof name;
+		typeof age;
+		typeof single;
+
+		// ATURAN PENULISAN NAMA VARIABLE
+		// tidak boleh menggunakan angka di depannya
+		// contoh 
+		// SALAH
+		var 123nama ="Belajar Kode";
+		// BENAR
+		var nama123 = "Belajar Kode";
+		// penamaan variabel boleh menggunakan awal underscore
+		var _nama = "Petani Kode";
+		// penamaan variabel dianjurkan menggunakan camelCase apabila terdiri dari 2 suku kata
+		var fullName = "Petani Kode";
+		// penamaan variabel dianjurkan menggunakan bahasa inggris
+		var postTitle = "Tutorial Javascript untuk Pemula";
+
+		// DIALOG ALERT
+		// untuk menampilkan pesan peringatan atau informasi, Fungsi alert () berada dalam objek window 
+		// SYNTAX 
+		window.alert ("Hello World!");
+		alert ("Hello kawan");
+
+		// OPERATOR PENUGASAN 
+		// operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel 
+		// contoh 
+		var a = 19;
+		// variabel a diberikan tugas menyimpan nilai 19
+
+		// Perbedaan jumlah tanda sama dengan
+		// INI AKAN BERNILAI TRUE
+		var a = "4" == 4; // --> true
+		// INI AKAN BERNILAI FALSE
+		var b = "4" === 4; // --> false
+
+		// OPERATOR BITWISE (BINER)
+		a = 00111100
+		b = 00001101
+		// OPERASI AND
+		// contoh
+		a = 00111100
+		b = 00001101
+		a & b = 00001100
+		// OPERASI OR
+		a = 00111100
+		b = 00001101
+		a | b = 00111101
+		// OPERASI XOR
+		a = 00111100
+		b = 00001101
+		a ^ b = 00110001
+		// OPERASI NOT (negasi/kebalikan)
+		a = 00111100
+		~a = 11000011
+
+		// OPERATOR TERNARY
+		bagian kiri <operator> bagian tengah <operator> bagian kanan
+		// biasanya digunakan if(percabangan)
+		<kondisi> ? "benar" : "salah"
+	</script>
+
+</body>
+</html>
