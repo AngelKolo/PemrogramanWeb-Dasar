@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perulangan While</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ulangi = confirm("Apakah anda mau mengulang?");
+		var counter = 0;
+
+		While(ulangi)
+		{
+			var jawab = confirm ("Apakah anda mau mengulang?");
+			counter++;
+			if(jawab == false)
+			{
+				ulangi = false;
+			}
+		}
+		document.write("Perulangan sudah dilakukan sebanyak " + counter + " kali");
+	</script>
+</body>
+</html>
