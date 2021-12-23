@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ubah Warna Javascript</title>
+</head>
+<body>
+	<p class="paragraf">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+	<p class="paragraf">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+	<p class="paragraf">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+	<script type="text/javascript">
+		var paragraf = document.getElementsByClassName("paragraf");
+		setInterval(function () {
+			paragraf[0].style.color = "red";
+			paragraf[1].style.color = "green";
+			paragraf[2].style.color = "blue";
+
+			setTimeout(function () {
+				paragraf[0].style.color = "black";
+				paragraf[1].style.color = "black";
+				paragraf[2].style.color = "black";
+			}, 500)
+		}, 1000);
+	</script>
+</body>
+</html>
