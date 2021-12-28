@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Belajar Dasar Ajax</title>
+</head>
+<body>
+	<h1>Tutorial Ajax</h1>
+	<div id="hasil"></div>
+	<button onclick="loadContent()">Load Content</button>
+
+	<script type="text/javascript">
+		function loadContent() {
+			var xhr = new XMLHttpRequest();
+			var url = "http://localhost:8080/pem-web2021/COBA LAGI/Minggu 13/latihanJavascript4/ajax_files/kode.json";
+			xhr.onreadystatechange = function(){
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("hasil").innerHTML = this.responseText;
+				}
+			};
+			xhr.open("GET", url, true);
+			xhr.send();
+		}
+	</script>
+</body>
+</html>
