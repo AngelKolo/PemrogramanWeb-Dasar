@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Halaman Konsultasi</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" sizes="310x310"href="images/ms-icon-310x310.png">
+
+	<style type="text/css">
+		.data{
+			padding: 1em;
+			margin: 2em auto;
+			width: 17em;
+			background: #FFF;
+			border-radius: 3px;
+		}
+		label{
+			font-size: 10pt;
+			color: #555;
+		}
+		input[type="text"],textarea{
+			padding: 8px;
+			width: 95%;
+			background: #EFEFEF;
+			border: 0;
+			font-size: 10pt;
+			margin: 6px 0px;
+		}
+		.tombol{
+			background: #3498DB;
+			color: #FFF;
+			border: 0;
+			padding: 5PX 8PX;
+		}
+
+		/*JAM*/
+		.jam_digital{
+			overflow: hidden;
+			width: 330px;
+			margin: 20px auto;
+			border: 5px solid black;
+			background-color: magenta;
+		}
+		.kotak{
+			float: left;
+			width: 110px;
+			height: 100px;
+		}
+		.jam_digital p{
+			color: black;
+			font-size: 36px;
+			text-align: center;
+			margin-top: 30px;
+			margin-left: 30px;
+		}
+	</style>
+</head>
+<body>
+		<div id="wrapper">
+		<div id="header">
+			<!--Start header-->
+			<h1>Silahkan Login Terlebih Dahulu</h1>
+			<!--End header-->
+		</div>
+		<div id="menu">
+			<!--Start menu-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="pelayanan.html">Pet Info</a></li>
+				<li><a href="checkpet.html">Check Pet</a></li>
+				<li><a href="formulir-tindak-penanganan.html">Penanganan</a></li>
+			</ul>
+			<!--End menu-->
+		</div>
+
+		<div id="content">
+			<!--Start content-->
+			<div id="content_left">
+				<!--Strat Content_left-->
+	<center><h2>==== Halaman Login ====</h2></center>
+	<div class="data">
+		<form>
+			<div>
+				<label>Nama</label>
+				<input type="text" name="fnama">
+			</div>
+			<div>
+				<label>Umur</label>
+				<input type="text" name="fumur">
+			</div>
+			<div>
+				<label>Email</label>
+				<input type="text" name="femail">
+			</div>
+			<div>
+				<input type="submit" value="submit">
+			</div>
+		</form>
+	</div>
+
+	<h2 align="center">==== Tanggal dan Jam Digital ====</h2>
+	<h3 align ="center" id="tanggal"></h3>
+	<div class="jam_digital" id="jam_digital">
+		<div class="kotak">
+			<p id="jam"></p>
+		</div>
+		<div class="kotak">
+			<p id="menit"></p>
+		</div>
+		<div class="kotak">
+			<p id="detik"></p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var tgl = new Date();
+		document.getElementById("tanggal").innerHTML = "Waktu akses "+tgl;
+
+		window.setTimeout("waktu()", 1000);
+		function waktu(){
+			var waktu = new Date();
+			setTimeout("waktu()", 1000);
+			document.getElementById("jam").innerHTML = waktu.getHours();
+			document.getElementById("menit").innerHTML = waktu.getMinutes();
+			document.getElementById("detik").innerHTML = waktu.getSeconds();
+		}
+
+		// mengubah warna css per detik
+		var i=0;
+		function change(){
+			// var classJamDigital = document.getElementByClassName("jam_digital");
+			var classJamDigital = document.getElementById("jam_digital");
+			var color = ["Beige","Bisque","AntiqueWhite","Azure","AliceBlue","DeepSkyBlue","DodgerBlue","LightSkyBlue"];
+
+			// classJamDigital[0].style.backgroundColor = color[i];
+			classJamDigital.style.backgroundColor = color[i];
+
+			i=(i+1)%color.length;
+		}
+		setInterval(change, 1000);
+		</script>
+		<!--End content_left-->
+	</div>
+
+	<div id="content_right">
+			<!--Strat Content_right-->
+	<div id="socialmedia">
+					<br><br>
+					<h2>Follow Us</h2>
+					<a href="https://www.instagram.com/lokods_/"><img src="images/social_media/logo-instagram-png-13547.png"></a>
+					<img src="images/social_media/1393947994_64_facebook.png">
+					<a href="https://twitter.com/Lokods1?t=FZeUKc-2hI-WTMmqASKTKw&s=09"><img src="images/social_media/logo-twitter-png-5863.png"></a>
+				</div>
+				<!--End content_right-->
+			</div>
+			<!--End content-->
+		</div>
+
+		<div id="footer" align="center">
+			<!--Start footer-->
+			 CopyRights &copy; 2021 Angelica W Kolo
+			<!--End footer-->
+		</div>
+	</div>
+
+</body>
+</html>

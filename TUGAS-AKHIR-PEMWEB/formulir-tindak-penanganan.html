@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Penanganan</title>
+	<link rel="stylesheet" href="css/index.css">
+  	<link rel="icon" type="image/png" sizes="310x310"href="images/ms-icon-310x310.png">
+</head>
+<body background="images/background/bg-formulir.jpg">
+	<center>
+	<h2>FORMULIR PENGAJUAN TINDAKAN PENANGANAN</h2>
+	</center>
+	<center>
+		<form id="form_contact" method="post" action="">
+	<table border="2" cellspacing="1" cellpadding="1" width="80%" style="border-collapse: collapse;">
+		<tr>
+			<td width="2%"><strong>Nomor</strong></td>
+			<td width="78%"><strong>INFO PENGAJUAN</strong></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">1</td>
+			<td width="78%">Nama Pemilik &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;: <input type="text" id="fullname" name="fullname" placeholder="ex : joni susilo" value="" required autocomplete=""></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">2</td>
+			<td width="78%">Alamat Pemilik &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" id="fullname" name="fullname" placeholder="ex : Jl. Maju Raya No 7" value="" required autocomplete=""></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">3</td>
+			<td width="78%">Umur Pemilik &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; : <input type="text" id="fullname" name="fullname" placeholder="harus memiliki KTP ex : 20" value="" required autocomplete=""><i style="padding-left: 450px;">(lampirkan scan KTP)</i></td>
+		</tr>
+		<tr>
+			<td colspan ="2"> <strong>DATA HEWAN PELIHARAAN</strong></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">6</td>
+			<td width="78%">Nama Hewan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" id="fullname" name="fullname" placeholder="nama panggilan saja" value="" required autocomplete=""></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">7</td>
+			<td width="78%">Jenis Hewan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" id="fullname" name="fullname" placeholder="ex : Dog/Persia Cat/ Bird" value="" required autocomplete=""></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">8</td>
+			<td width="78%">Tanggal Lahir Hewan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="date" id="birthdate" name="birthdate">    Umur Hewan  : <input type="text" id="fullname" name="fullname" placeholder="ex : 3 bulan / 3 tahun" value="" required autocomplete="">
+			</td>
+		<tr>
+			<td width="4%" align="center"></td>
+			<td width="78%">Foto kondisi hewan sekarang<i> (Di Lampirkan)</i></td>
+		</tr>
+			<td width="4%" align="center">9</td>
+			<td width="78%">Jenis Kelamin Hewan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="radio" id ="gendermale"name="gender" value="male" checked="">
+                     &nbsp;Laki-Laki
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="radio" id="genderfemale"name="gender" value="female">&nbsp;Perempuan</td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">10</td>
+			<td width="78%"><b>Spesifikasi Penyakit</b></td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">11</td>
+			<td style="padding-left: 129px;">Gejala Awal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :  <input type="text" id="fullname" name="fullname" placeholder="gejala awal yang disadari" value="" required autocomplete=""> </td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">12</td>
+			<td style="padding-left: 129px;">Kondisi Terkini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :  <input type="text" id="fullname" name="fullname" placeholder="jelaskan kondisi sekarang" value="" required autocomplete=""> </td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">13</td>
+			<td style="padding-left: 129px;">Penyakit yang diderita sebelumnya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :  <input type="text" id="fullname" name="fullname" placeholder="isi jika hewan punya penyakit sebelumnya" value="" required autocomplete=""> </td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">14</td>
+			<td style="padding-left: 129px;">Parah atau tidaknya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  <input type="text" id="fullname" name="fullname" placeholder="parah / tidak" value="" required autocomplete=""> </td>
+		</tr>
+		<tr>
+			<td width="4%" align="center">15</td>
+			<td>Email Aktif Pemilik &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; : <input type="email" id="useremail" name="useremail" placeholder="ex : koko132@gmail.com" value=""> </td>
+		</tr>
+	</table>
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+</center>
+
+<br><br>
+	<h3 align="right">Ingin Kembali Ke Halaman Utama ? <a href="index.html" align="right">Klik Disini</a></h3>
+	<br><br>
+	<div class="row">
+                <div class="text-center py-3"><center>CopyRights &copy;2022 Pet Medical Center</center></div>
+            </div>
+</body>
+</html>
